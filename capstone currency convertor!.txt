@@ -1,0 +1,21 @@
+exchange_rates = {
+    "EUR": 90.95,  
+    "USD": 83.39,  
+    "GBP": 106.82, 
+    "THB": 2.28,  
+    "PHP": 1.42,  
+}
+from_currency = input("Enter the currency you want to convert from (EUR, USD, GBP, THB, PHP): ").upper()
+amount = float(input("Enter the amount to convert: "))
+
+
+if from_currency not in exchange_rates:
+    print("Invalid currency. Please enter EUR, USD, GBP, THB, or PHP.")
+else:
+    
+    rate = exchange_rates[from_currency]
+    converted_amount = amount * rate
+
+   
+    print(f"{amount} {from_currency} is equal to approximately {converted_amount:.2f} Rupees.")
+
