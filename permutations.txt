@@ -1,0 +1,12 @@
+def permutations(s):
+    if len(s) == 0:
+        return ['']
+    perms = []
+    for i in range(len(s)):
+        subperms = permutations(s[:i] + s[i+1:])
+        for subperm in subperms:
+            perms.append(s[i] + subperm)
+    return perms
+
+string = 'abc'
+print(permutations(string))
