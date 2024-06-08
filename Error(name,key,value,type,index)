@@ -1,0 +1,30 @@
+NAMEERROR:
+try:
+  print(suvarna)
+except NameError as e:
+  print("A nameerror occured",e)
+  print("the name suvarna is not declared")
+KEYERROR:
+try:
+  dict={'a':1,'b':2}
+  print(dict['c'])
+except KeyError:
+  print("the key 'c' is not exist")
+VALUEERROR:
+try:
+  num=int("sree")
+  print(num)
+except ValueError:
+  print("connot convert string to an integer")
+TYPEERROR:
+try:
+  res=345+"hello"
+  print(res)
+except TypeError:
+  print("cannot concatenate string and integer")
+INDEXERROR:
+try:
+  res=345+"hello"
+  print(res)
+except TypeError:
+  print("cannot concatenate string and integer")
