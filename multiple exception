@@ -1,0 +1,10 @@
+ Write a Python program to handle multiple exceptions using a single except block.
+try:
+  n1=int(input(""))
+  n2=int(input(""))
+  res=n1/n2
+  print(res)
+  list=[1,2,3]
+  print(list[1])
+except (ValueError, ZeroDivisionError, IndexError)as e:
+  print("an error occured:",e)
