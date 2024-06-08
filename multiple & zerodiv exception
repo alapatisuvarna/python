@@ -8,3 +8,11 @@ try:
   print(list[1])
 except (ValueError, ZeroDivisionError, IndexError)as e:
   print("an error occured:",e)
+ZERO DIVISION EXCEPTION:
+try:
+  n1=int(input())
+  n2=int(input())
+  n3=n1/n2
+  print(n3)
+except (ZeroDivisionError)as e:
+  print("an error occured :",e)
