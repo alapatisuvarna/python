@@ -28,3 +28,9 @@ try:
   print(res)
 except TypeError:
   print("cannot concatenate string and integer")
+Write a Python program to handle a FileNotFoundError exception.
+try:
+    with open('saveetha', 'r') as file:
+        contents=file.read()
+except FileNotFoundError:
+        print("the file'saveetha'doesnot exist")
