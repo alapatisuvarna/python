@@ -1,0 +1,120 @@
+1.Write a Python program to convert a dictionary to a list of tuples.
+n={"a":1,"b":2}
+m=tuple(n.items())
+print(m)
+
+2.Write a Python program to sort a given dictionary by its values.
+n={"a":3,"b":2}
+m=dict(sorted(n.items(),key=lambda item:item[1]))
+print(m)
+
+3.Write a Python program to find the frequency of all elements in a given dictionary.
+n={"a":1,"b":4,"c":3,"d":1,"e":2}
+frequency = {}
+for i in n.values():
+    frequency[i]=frequency.get(i, 0)+1
+print("given dictionary:",n)
+print("frequency of elements:",frequency)
+
+4.Write a Python program to find the keys with the maximum and minimum values in a given dictionary.
+n={"a":1,"b":12,"c":6}
+max_key=max(n,key=n.get)
+min_key=min(n,key=n.get)
+print("maximum value=",max_key)
+print("minimum value=",min_key)
+
+5.Write a Python program to find the maximum and minimum values in a given dictionary.
+n={"a":1,"b":12,"c=":6}
+max_key=max(n.values())
+min_key=min(n.values())
+print("maximum value=",max_key)
+print("minimum value=",min_key)
+
+6.Write a Python program to check if a given value exists in a given dictionary.
+def value(dictionary,valuetocheck):
+    return valuetocheck in dictionary.values()
+my_dict={"a":1,"b":5,"c":7}
+valuetocheck=7
+if value(my_dict,valuetocheck):
+    print("the value {} exists in the dictionary.".format(valuetocheck))
+else:
+    print("the value {} does not exist".format(valuetocheck))
+
+7. Write a Python program to concatenate two dictionaries.
+def con(dict1,dict2):
+    return {**dict1,**dict2}
+dict1={"a":1,"b":5}
+dict2={"c":4,"d":0}
+con=con(dict1,dict2)
+print("concatanated dictionary:",con)
+
+8.Write a Python program to check if a given key exists in a given dictionary.
+def keyexist(dictionary,keytocheck):
+    return keytocheck in dictionary
+my_dict={"a":1,"b":2,"c":3}
+keytocheck="b"
+if keyexist(my_dict,keytocheck):
+    print("the key '{}' exists in the dictionary".format(keytocheck))
+else:
+    print("the key '{}'does not exist in the dictionary".format(keytocheck))
+
+9.Write a Python program to find the length of a given dictionary.
+def dict(dictionary):
+  return len(dictionary)
+my_dict={"a":1,"b":6,"c":8,"d":4}
+print("length of the dictionary:",dict(my_dict))
+
+10. Write a Python program to sort a given tuple in ascending order.
+a=(7,5,3,8)
+b=tuple(sorted(a))
+print(b)
+
+11.Write a Python program to find the sum of all elements in a given tuple.
+a=(1,2,3)
+b=sum(a)
+print(b)
+
+12. Write a Python program to convert a list of tuples to a list of lists.
+a=[(1,2,3,4)]
+b=[list(tuple)for tuple in a]
+print(b)
+
+13.Write a Python program to check if a given element exists in a given tuple.
+a=(1,2,3,4)
+b=5
+if b in a:
+  print("element exist in a tuple")
+else:
+  print("element does not exist")
+
+14.Write a Python program to convert a tuple to a list.
+a=(1,2,3,8,6,54)
+b=list(a)
+print(b)
+
+15.Write a Python program to find the index of a given element in a given tuple.
+a=(1,2,3,4)
+b=4
+print("the index is:",a.index(b))
+
+16. Write a Python program to concatenate two tuples.
+a=(1,2,3,4)
+b=(7,6,8,9)
+c=a+b
+print(c)
+
+17. Write a Python program to find the maximum and minimum elements in a given tuple.
+a=(6,4,8,3,2)
+b=max(a)
+c=min(a)
+print("maximim element:",b)
+print("mimimum element:",c)
+
+18. Write a Python program to reverse a given tuple.
+a=(1,2,3,4)
+b=a[::-1]
+print(b)
+
+19.Write a Python program to find the length of a given tuple.
+a=(1,2,3,4,5,6)
+print("length of the tuple is:",len(a))
