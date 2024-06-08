@@ -1,0 +1,15 @@
+class customException(Exception):
+	def init(self,message):
+		init(message)
+def divide(a,b):
+    if b == 0:
+        raise customException("divison by zero is not allowed")
+    else:
+        return a/b
+try:
+    result=divide(10,2)
+except customException as e:
+    print("custom exception occurred:",e)
+else:
+    print("result of divison:",result)
+    
